@@ -69,6 +69,13 @@ variable "ecs_load_balancers" {
 variable "container_definition_json" {
   type        = string
   description = "The JSON of the task container definition"
+  default     = ""
+}
+
+variable "task_definition" {
+  type        = string
+  description = ""
+  default     = ""
 }
 
 variable "container_port" {
