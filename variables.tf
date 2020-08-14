@@ -75,6 +75,13 @@ variable "ecs_load_balancers" {
 variable "container_definition_json" {
   type        = string
   description = "A string containing a JSON-encoded array of container definitions (`\"[{ \"name\": \"container1\", ... }, { \"name\": \"container2\", ... }]\"`). See https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerDefinition.html, https://github.com/cloudposse/terraform-aws-ecs-container-definition, or https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecs_task_definition#container_definitions"
+  default     = ""
+}
+
+variable "task_definition" {
+  type        = string
+  description = ""
+  default     = ""
 }
 
 variable "container_port" {
